@@ -27,7 +27,7 @@ function PasswordGenerator() {
   const copyPassword = useCallback(() => {
     passwordref.current?.select();
     window.navigator.clipboard.writeText(password);
-    //passwordref.current?.setSelectionRange(0, 20); //upto how long range of password you want to select
+    //passwordref.current?.setSelectionRange(0, 20); //upto how long range of password you want to select.
   }, [password]);
 
   useEffect(() => {
